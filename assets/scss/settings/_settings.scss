@@ -1,15 +1,17 @@
+@import url($url-font-primary);
+
 :root {
     //COLORS
-    --color-primary: #12171E;
-    --color-steel-blue: #536075;
-    --color-secondary: #F6F9FC;
-    --color-rust:#FF7646;
-    --color-disabled:#AEB6C3;
-    --color-white: #FFFFFF;
-    --color-pale-green:#62FF7D;
-    --color-red:#F84545;
-    --color-light-blue:#A1E7FC;
-    --color-yellow:#FFD460;
+    --color-primary: #876671;
+    --color-black:#0F151B;
+    --color-white:#FFFFFF;
+    --color-gray:#AEB6C3;
+    --color-gray-light:#F6F9FC;
+    --color-gray-dark: #4F5C67;
+    --color-red-light:#EA6157;
+    --color-red-black:#A52016;
+    --color-misty-rose:#F8D5D7;
+    --color-rose-black:#160106;
 }
 // FONTS
-$font-primary: 'Eudoxus Sans', 'Poppins';
+$font-primary: 'Raleway', sans-serif;
