@@ -240,12 +240,13 @@ ol, ul {
 /* ========================================================================================= */
 /* BODYS */
 /* ========================================================================================= */
-.o-font-primary-body, .o-font-primary-body-m--light, .o-font-primary-body-m--medium, .o-font-primary-body-m--medium--link, .o-font-primary-body-m--bold, .o-font-primary-body-s--light, .o-font-primary-body-s--medium, .o-font-primary-body-s--bold, .o-font-primary-body-xs--light, .o-font-primary-body-xs--medium, .o-font-primary-body-xs--bold {
+.o-font-primary-body, .o-font-primary-body-m--light, .o-font-primary-body-m--medium, .o-font-primary-body-m--medium--link, .o-font-primary-body-m--bold, .o-font-primary-body-s--light, .o-font-primary-body-s--medium, .o-font-primary-body-s--bold, .o-font-primary-body-xs--light, .o-font-primary-body-xs--medium, .o-font-primary-body-xs--bold, .o-font-primary-body-xxs--light, .o-font-primary-body-xxs--medium, .o-font-primary-body-xxs--bold {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   /* LEVEL MEDIUM */
   /* LEVEL SMALL */
   /* LEVEL EXTRA SMALL */
+  /* LEVEL EXTRA EXTRA SMALL */
 }
 
 .o-font-primary-body-m--light {
@@ -306,6 +307,24 @@ ol, ul {
   font-weight: 700;
 }
 
+.o-font-primary-body-xxs--light {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 300;
+}
+
+.o-font-primary-body-xxs--medium {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 500;
+}
+
+.o-font-primary-body-xxs--bold {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 700;
+}
+
 /* ========================================================================================= */
 /* END BODYS */
 /* ========================================================================================= */
@@ -351,13 +370,11 @@ ol, ul {
 
 .o-divider, .o-divider-strong--primary, .o-divider-light--disabled, .o-divider-light--primary {
   width: 100%;
-  margin-top: 45px;
-  margin-bottom: 45px;
 }
 
 .o-divider-strong--primary {
   margin-top: 0px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid rgba(135, 102, 113, 0.3);
 }
 
 .o-divider-light--disabled {
@@ -745,6 +762,72 @@ ol, ul {
     margin-left: 0px;
     margin-bottom: 50px;
   }
+}
+
+.c-rectangles-information {
+  margin-bottom: 75px;
+  margin-top: 55px;
+}
+
+.c-rectangles-information__title-content {
+  margin-bottom: 10px;
+}
+
+.c-rectangles-information__subtitle-content {
+  margin-bottom: 40px;
+}
+
+.c-rectangles-information__wrapper-rectangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-rectangles-information__column-rectangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 23%;
+  margin-right: 0px;
+}
+
+@media (max-width: 1200px) {
+  .c-rectangles-information__column-rectangle {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-rectangles-information__column-rectangle {
+    width: 100%;
+  }
+}
+
+.c-rectangles-information__rectangle-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-rectangles-information__icon-rectangle {
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* ========================================================================================= */
