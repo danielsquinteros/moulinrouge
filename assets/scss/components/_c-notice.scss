@@ -1,0 +1,19 @@
+.c-notice{
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include md(){
+            text-align: start;
+            align-items: flex-start;
+        }
+    }
+
+    &__link{
+        margin-top: 5px;
+        text-decoration-line: underline;
+    }
+}

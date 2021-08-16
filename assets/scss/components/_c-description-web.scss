@@ -1,0 +1,21 @@
+.c-description-web{
+    margin-top: 100px;
+    margin-bottom: 45px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include md(){
+            align-items: flex-start;
+        }
+    }
+
+    &__title-content{
+        margin-bottom: 15px;
+        @include md(){
+            margin-bottom: 0px;
+        }
+    }
+}
