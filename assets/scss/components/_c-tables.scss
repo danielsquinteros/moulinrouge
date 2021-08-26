@@ -1,0 +1,40 @@
+.c-tables{
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    &__wrapper-tables{
+        display: grid;
+        grid-template-columns: 
+        [v1] 1fr [v2] 1fr [v3] 1fr [v4];
+        grid-template-rows: 
+        [h1] 1fr [h2];
+        gap: 150px;
+        @include xl(){
+            gap: 100px;
+        }
+        @include lg(){
+            gap: 50px;
+        }
+        @include md(){
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 25px;
+        }
+
+    }
+
+    &__divider{
+        margin-bottom: 70px;
+        @include md(){
+            margin-bottom: 35px;
+        }
+    }
+    &__row-table{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__notes{
+        margin-top: 40px;
+    }
+}

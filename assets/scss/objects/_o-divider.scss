@@ -1,12 +1,12 @@
 @mixin select-size-color($size, $color){
+    @if $size == strong and $color == roseBlack{
+        border: 1px solid var(--color-rose-black);
+    }
     @if $size == strong and $color == primary{
-        border: 1px solid rgba(135, 102, 113, 0.3);
+        border: 1px solid var(--color-primary);
     }
-    @if $size == light and $color == disabled{
-        border: 0.7px solid var(--color-disabled);
-    }
-    @if $size == light and $color == primary{
-        border: 0.7px solid var(--color-primary);
+    @if $size == light and $color == roseBlack{
+        border: 0.7px solid var(--color-rose-black);
     }
 }
 
@@ -16,16 +16,23 @@
     // margin-top: 45px;
     // margin-bottom: 45px;
     &-strong{
+        &--roseBlack{
+            @extend .o-divider;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            @include select-size-color(strong,roseBlack);
+        }
+    }
+    &-strong{
         &--primary{
             @extend .o-divider;
-            margin-top: 0px;
             @include select-size-color(strong,primary);
         }
     }
     &-light{
-        &--disabled{
+        &--roseBlack{
             @extend .o-divider;
-            @include select-size-color(light,disabled);
+            @include select-size-color(light,roseBlack);
         }
         &--primary{
             @extend .o-divider;

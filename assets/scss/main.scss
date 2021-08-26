@@ -55,6 +55,7 @@
 @import './objects/o-height';
 @import './objects/o-width';
 @import './objects/o-text-align';
+@import './objects/o-opacity';
 
 /* ============================================================ */
 /* END OBJECTS */
@@ -76,6 +77,8 @@
 
 /* PAGES */
 @import "./components/_c-gallery-images";
+@import "./components/_c-tables";
+@import "./components/_c-columns-icons";
 
 /* ========================================================================================= */
 /* END COMPONENTS */

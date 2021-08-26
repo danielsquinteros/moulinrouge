@@ -1,17 +1,17 @@
 .c-gallery-images{
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 
     &__container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 20px;
         @include lg(){
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
         }
-        @include sm(){
+        @include md(){
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 1fr);
         }
