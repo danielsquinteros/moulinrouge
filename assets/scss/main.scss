@@ -75,10 +75,18 @@
 @import "./components/_c-description-web";
 @import "./components/_c-notice";
 
+
+@import "./components/c-background";
+
+
 /* PAGES */
 @import "./components/_c-gallery-images";
 @import "./components/_c-tables";
-@import "./components/_c-columns-icons";
+@import "./components/_c-card-big";
+
+
+/*POLITICS*/
+@import "./components/c-politics";
 
 /* ========================================================================================= */
 /* END COMPONENTS */

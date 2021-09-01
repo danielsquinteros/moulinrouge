@@ -1,0 +1,44 @@
+.c-politics{
+    margin-bottom: 200px;
+    &__wrapper-title{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid var(--color-rose-black);
+        border-bottom: 1px solid var(--color-rose-black);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+    &__wrapper-content{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        height: 0;
+        transition: all .25s ease;
+    }
+
+    &__content{
+        width: 90%;
+        line-height: 24px;
+        margin-top: 50px;
+    }
+
+    &__separation{
+       height: 40px;
+    }
+}
+
+.accordion-open{
+    // & .c-politics__wrapper-content{
+    //       padding-top: 50px;
+    //     padding-bottom: 50px;
+    // }
+
+
+    & .c-politics__icon{
+        transform: rotate(90deg);
+    }
+    & .c-politics__title{
+        font-weight: 600;
+    }
+}
