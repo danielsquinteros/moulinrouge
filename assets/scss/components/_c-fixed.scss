@@ -1,0 +1,29 @@
+.c-fixed {
+    display: flex;
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    z-index: 10;
+    align-items: center;
+
+
+    &__btn-back-to-index {
+        height: 60px;
+        width: 60px;
+        margin-right: 15px;
+        &--page{
+            @extend .c-fixed__btn-back-to-index;
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__whatsapp{
+        height: 60px;
+        width: 60px;    
+    }
+
+    @include md(){
+        top: 85%;
+        z-index: 10;
+    }
+}

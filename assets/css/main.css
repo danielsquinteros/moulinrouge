@@ -1090,24 +1090,24 @@ ol, ul {
 }
 
 .c-three-rectangles__wrapper-rectangle-content:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(/assets/resources/images/rooms/2.jpeg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(/assets/resources/images/rooms/2.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(/assets/resources/images/rooms/simple/1.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(/assets/resources/images/rooms/simple/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .c-three-rectangles__wrapper-rectangle-content:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(/assets/resources/images/rooms/3.jpeg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(/assets/resources/images/rooms/3.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(/assets/resources/images/rooms/suite/1.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(/assets/resources/images/rooms/suite/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .c-three-rectangles__wrapper-rectangle-content:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(/assets/resources/images/rooms/4.jpeg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(/assets/resources/images/rooms/4.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(/assets/resources/images/rooms/vip/1.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(/assets/resources/images/rooms/vip/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1283,6 +1283,42 @@ ol, ul {
           text-decoration-line: underline;
 }
 
+.c-fixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 90%;
+  right: 2%;
+  z-index: 10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-fixed__btn-back-to-index, .c-fixed__btn-back-to-index--page {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+}
+
+.c-fixed__btn-back-to-index--page {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.c-fixed__whatsapp {
+  height: 60px;
+  width: 60px;
+}
+
+@media (max-width: 768px) {
+  .c-fixed {
+    top: 85%;
+    z-index: 10;
+  }
+}
+
 /* PAGES */
 .c-gallery-images {
   margin-top: 50px;
@@ -1397,10 +1433,9 @@ ol, ul {
   margin-bottom: 120px;
 }
 
-.c-card-big__wrapper-content {
+.c-card-big__wrapper-content, .c-card-big__wrapper-content--simple, .c-card-big__wrapper-content--suite, .c-card-big__wrapper-content--vip {
   height: 538px;
   border-radius: 10px;
-  background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 56.62%), url(/assets/resources/images/rooms/4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1415,22 +1450,63 @@ ol, ul {
           align-items: flex-end;
 }
 
+.c-card-big__wrapper-content--simple {
+  background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 70.62%), url(/assets/resources/images/rooms/simple/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 480px) {
+  .c-card-big__wrapper-content--simple {
+    height: auto;
+    background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/simple/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.c-card-big__wrapper-content--suite {
+  background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 50.62%), url(/assets/resources/images/rooms/suite/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 480px) {
+  .c-card-big__wrapper-content--suite {
+    height: auto;
+    background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/suite/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.c-card-big__wrapper-content--vip {
+  background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 50.62%), url(/assets/resources/images/rooms/vip/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 480px) {
+  .c-card-big__wrapper-content--vip {
+    height: auto;
+    background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/vip/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media (max-width: 1024px) {
-  .c-card-big__wrapper-content {
+  .c-card-big__wrapper-content, .c-card-big__wrapper-content--simple, .c-card-big__wrapper-content--suite, .c-card-big__wrapper-content--vip {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .c-card-big__wrapper-content {
-    height: auto;
-    background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/4.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }
 
@@ -1553,6 +1629,9 @@ ol, ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid var(--color-rose-black);
   border-bottom: 1px solid var(--color-rose-black);
   padding-top: 10px;

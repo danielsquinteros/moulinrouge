@@ -5,23 +5,68 @@
     &__wrapper-content{
         height: 538px;
          border-radius: 10px;
-         background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 56.62%), url(/assets/resources/images/rooms/4.jpeg);
+        //  background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 56.62%), url(/assets/resources/images/rooms/4.jpeg);
          background-repeat: no-repeat;
          background-size: cover;
          background-position: center;
          display: flex;
          justify-content: space-between;
          align-items: flex-end;
-         @include lg(){
-             flex-direction: column;
-         }
-        @include xs(){
-            height: auto;
-            background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/4.jpeg);
+        &--simple{
+            @extend .c-card-big__wrapper-content;
+            background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 70.62%), url(/assets/resources/images/rooms/simple/1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-        } 
+            @include xs(){
+                height: auto;
+                background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/simple/1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            } 
+        }
+        &--suite{
+            @extend .c-card-big__wrapper-content;
+            background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 50.62%), url(/assets/resources/images/rooms/suite/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include xs(){
+                height: auto;
+                background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/suite/1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            } 
+        }
+        &--vip{
+            @extend .c-card-big__wrapper-content;
+            background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 50.62%), url(/assets/resources/images/rooms/vip/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include xs(){
+                height: auto;
+                background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/vip/1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            } 
+        }
+
+         @include lg(){
+             flex-direction: column;
+         }
+
+        // @include xs(){
+        //     height: auto;
+
+        //     background: linear-gradient(90.12deg, rgba(15, 21, 27, 0.7) 12.47%, rgba(0, 0, 0, 0) 100%), url(/assets/resources/images/rooms/4.jpeg);
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     background-position: center;
+        // } 
     }
     &__wrapper-left{
         margin-top: 80px;
